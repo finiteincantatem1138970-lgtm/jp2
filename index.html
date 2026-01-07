@@ -7,7 +7,7 @@
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="./img/japanese-food-g-icon.png" />
-    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=f7774e9a"></script>
+    
     <style>
         /* Apply the Inter font globally */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -34,161 +34,8 @@
         }
     </style>
 
-    <style>
-        /* Overlay */
-        .welcome-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(6px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
+    
 
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 0.4s ease, visibility 0.4s ease;
-        }
-
-        .welcome-overlay.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-
-        /* Modal */
-        .welcome-modal {
-            position: relative;
-            background: #111;
-            color: #fff;
-            max-width: 520px;
-            width: 90%;
-            padding: 40px 35px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-            animation: scaleIn 0.5s ease;
-        }
-
-        /* Heading */
-        .welcome-modal h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .welcome-modal h2 span {
-            color: #c59d5f; /* premium gold */
-        }
-
-        /* Text */
-        .welcome-modal p {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #ccc;
-            margin-bottom: 30px;
-        }
-
-        /* Buttons */
-        .welcome-actions {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-        }
-
-        .primary-btn {
-            background: #c59d5f;
-            color: #111;
-            border: none;
-            padding: 12px 26px;
-            border-radius: 30px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        .primary-btn:hover {
-            background: #d8b173;
-        }
-
-        .secondary-btn {
-            background: transparent;
-            border: 1px solid #c59d5f;
-            color: #c59d5f;
-            padding: 12px 26px;
-            border-radius: 30px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        .secondary-btn:hover {
-            background: #c59d5f;
-            color: #111;
-        }
-
-        /* Close Button */
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 18px;
-            background: transparent;
-            border: none;
-            color: #aaa;
-            font-size: 28px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        .close-btn:hover {
-            color: #fff;
-        }
-        .no-scroll {
-            overflow: hidden;
-            height: 100vh;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.9);
-            }
-            to {
-                transform: scale(1);
-            }
-        }
-
-    </style>
-</head>
-<body class="text-gray-800" id="myBody">
-
-<!-- Welcome Dialog -->
-<div class="welcome-overlay" id="welcomeOverlay">
-    <div class="welcome-modal">
-        <button class="close-btn" id="closeWelcome">&times;</button>
-
-        <h2>へようこそ <span>日本料理</span></h2>
-        <p>
-            新鮮な食材と熟練の技で作り上げた、本格的な日本の味をご堪能ください。
-            皆様のご来店を心よりお待ちしております。
-        </p>
-
-        <div class="welcome-actions">
-            <button class="primary-btn">メニューを見る</button>
-            <button class="secondary-btn">お問い合わせ</button>
-        </div>
-    </div>
-</div>
 <!-- Header & Navigation -->
 <header class="sticky top-0 z-50 bg-white shadow-lg">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
@@ -414,4 +261,5 @@
 </script>
 
 </body>
+
 </html>
